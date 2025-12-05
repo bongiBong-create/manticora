@@ -1,0 +1,57 @@
+@import "normalize.css";
+@import "./fonts.css";
+
+:root {
+  --font-size-n: 12px;
+  --line-height-size-n: 16px;
+
+  --font-size-b: 22px;
+  --line-height-size-b: 26px;
+
+  --font-base: "Suis", sans-serif;
+  --padding-x: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-base);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-family: var(--font-base);
+  font-weight: 500;
+  font-size: 16px;
+  padding-block: 8px;
+  display: inline-flex;
+  transition: all .3s;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  transition: all .3s;
+}
+
+input {
+  border: 0;
+}
+
+.container {
+  max-width: calc(var(--container-width) + (var(--padding-x) * 2));
+  margin-inline: auto;
+  padding-inline: var(--padding-x);
+}
+
+ul {
+  list-style: none;
+}
