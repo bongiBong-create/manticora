@@ -6,7 +6,7 @@ import { App } from "..";
 export const router = createHashRouter([
   {
     path: "/",
-    element: <App />, // общий layout с Header
+    element: <App />,
     children: [
       { path: "/", element: <Catalog /> },
       { path: "/about", element: <About /> },
