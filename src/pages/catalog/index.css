@@ -1,0 +1,16 @@
+.catalog {
+  padding: 100px 8px;
+}
+
+.product_list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 462px));
+  gap: 50px 8px;
+}
+
+.product_img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
