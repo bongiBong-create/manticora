@@ -1,0 +1,25 @@
+.nav_list {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .nav_list {
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 50;
+    flex-direction: column;
+    font-size: var(--font-size-b);
+    line-height: var(--line-height-size-b);
+    gap: 0;
+  }
+
+  .nav_list.open {
+    opacity: 1;
+  }
+}

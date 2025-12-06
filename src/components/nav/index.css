@@ -1,4 +1,18 @@
-.nav_list {
+.nav {
   display: flex;
   gap: 10px;
+}
+
+.menu_button {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .menu_button {
+    display: inline-flex;
+  }
 }

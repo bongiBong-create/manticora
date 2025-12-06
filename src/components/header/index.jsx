@@ -5,7 +5,6 @@ export const Header = () => {
   const menuItems = [
     { name: "КАТАЛОГ", path: "/" },
     { name: "О БРЕНДЕ", path: "/about" },
-    { name: `КОРЗИНА (0)`, path: "/cart" },
   ];
 
   return (
