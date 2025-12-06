@@ -23,12 +23,12 @@ a {
   text-decoration: none;
   color: var(--color-dark);
   font-family: var(--font-base);
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
   padding-block: 8px;
   display: inline-flex;
   transition: all .3s;
   cursor: pointer;
+  padding: 0;
 }
 
 li {
@@ -40,6 +40,7 @@ button {
   border: 0;
   cursor: pointer;
   display: inline-flex;
+  align-items: center;
   transition: all .3s;
 }
 
