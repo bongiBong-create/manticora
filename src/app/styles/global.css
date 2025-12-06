@@ -21,7 +21,7 @@
 
 a {
   text-decoration: none;
-  color: var(--color-dark);
+  color: black;
   font-family: var(--font-base);
   font-weight: 400;
   padding-block: 8px;
