@@ -3,8 +3,8 @@ import "./index.css";
 
 export const Header = () => {
   const menuItems = [
-    { name: "КАТАЛОГ", path: "/" },
-    { name: "О БРЕНДЕ", path: "/about" },
+    { id: 1, name: "КАТАЛОГ", path: "/" },
+    { id: 2, name: "О БРЕНДЕ", path: "/about" },
   ];
 
   return (

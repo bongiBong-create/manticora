@@ -3,6 +3,13 @@
   gap: 10px;
 }
 
+.product_list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(462px, 1fr));
+  gap: 50px 0;
+}
+
 @media (max-width: 1024px) {
   .nav_list {
     display: none;
@@ -28,5 +35,11 @@
     font-size: var(--font-size-b);
     line-height: var(--line-height-size-b);
     gap: 0;
+  }
+}
+
+@media (width < 462px) {
+  .product_list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }

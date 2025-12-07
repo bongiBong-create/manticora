@@ -1,0 +1,18 @@
+.button:hover {
+  opacity: .5;
+  transition: all .3s;
+}
+
+.menu_button {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .menu_button {
+    display: inline-flex;
+  }
+}

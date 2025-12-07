@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { List } from "../list";
+import { Button } from "../button";
 
 import "./index.css";
 
@@ -8,12 +10,21 @@ export const Nav = ({ menu }) => {
 
   return (
     <nav className="nav">
-      <List menu={menu} isOpen={isOpen} />
-      <button className="menu_button" onClick={() => setIsOpen(!isOpen)}>
+      <List
+        className="nav_list"
+        items={menu}
+        isOpen={isOpen}
+        renderItem={(item) => (
+          <li key={item.id}>
+            <Link to={item.path}>{item.name}</Link>
+          </li>
+        )}
+      />
+      <Button className="menu_button" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? "ЗАКРЫТЬ" : "МЕНЮ"}
-      </button>
+      </Button>
 
-      <button className={isOpen ? "close" : ""}>КОРЗИНА (0)</button>
+      <Button className={isOpen ? "close" : ""}>КОРЗИНА (0)</Button>
     </nav>
   );
 };

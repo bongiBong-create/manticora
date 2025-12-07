@@ -17,11 +17,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-base);
+  font-weight: 400;
+  color: black;
 }
 
 a {
   text-decoration: none;
-  color: black;
   font-family: var(--font-base);
   font-weight: 400;
   padding-block: 8px;
@@ -29,6 +30,8 @@ a {
   transition: all .3s;
   cursor: pointer;
   padding: 0;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 li {
