@@ -1,41 +1,8 @@
 import "./index.css";
 import { List } from "../../components/list";
-import { Product } from "../../components/product";
-
-const products = [
-  {
-    name: "Сумка Manticore",
-    price: "3 500 Р",
-  },
-  {
-    name: "Сумка Manticore",
-    price: "3 500 Р",
-  },
-  {
-    name: "Сумка Manticore",
-    price: "3 500 Р",
-  },
-  {
-    name: "Сумка Manticore",
-    price: "3 500 Р",
-  },
-  {
-    name: "Сумка Manticore",
-    price: "3 500 Р",
-  },
-  {
-    name: "Сумка Manticore",
-    price: "3 500 Р",
-  },
-  {
-    name: "Сумка Manticore",
-    price: "3 500 Р",
-  },
-  {
-    name: "Сумка Manticore",
-    price: "3 500 Р",
-  },
-];
+import { Card } from "../../components/card";
+import { Link } from "react-router-dom";
+import { products } from "./data.js";
 
 export const Catalog = () => {
   return (
@@ -44,7 +11,11 @@ export const Catalog = () => {
         <List
           className="product_list"
           items={products}
-          renderItem={(item) => <Product item={item} />}
+          renderItem={(item) => (
+            <Link to={`/${item.id}`}>
+              <Card item={item} variant="list" />
+            </Link>
+          )}
         />
       </div>
     </section>

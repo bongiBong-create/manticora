@@ -11,6 +11,29 @@
   display: none;
 }
 
+.button_size {
+  width: 100%;
+  border: 1px solid black;
+  padding: 7px 0;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-n);
+  line-height: var(--line-height-size-n);
+}
+
+.button_cart {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  font-weight: 400;
+  color: white;
+  font-size: var(--font-size-n);
+  line-height: var(--line-height-size-n);
+  padding: 7px 0;
+}
+
 @media (max-width: 1024px) {
   .menu_button {
     display: inline-flex;

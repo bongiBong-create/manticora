@@ -1,7 +1,8 @@
 import { createHashRouter } from "react-router-dom";
+import { App } from "..";
 import { Catalog } from "../../pages/catalog";
 import { About } from "../../pages/about";
-import { App } from "..";
+import { Product } from "../../pages/product";
 
 export const router = createHashRouter([
   {
@@ -10,6 +11,7 @@ export const router = createHashRouter([
     children: [
       { path: "/", element: <Catalog /> },
       { path: "/about", element: <About /> },
+      { path: "/:id", element: <Product /> },
     ],
   },
 ]);

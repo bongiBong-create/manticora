@@ -1,9 +1,0 @@
-.product_img img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.product_info {
-  padding: 0 8px;
-}

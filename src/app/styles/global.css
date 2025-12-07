@@ -34,6 +34,11 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+a:hover {
+  opacity: .5;
+  transition: all .3s;
+}
+
 li {
   list-style: none;
 }

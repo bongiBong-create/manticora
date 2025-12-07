@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./index.css";
 
 export const List = ({ items, className, isOpen, renderItem }) => {
