@@ -1,5 +1,7 @@
 import product from "../../assets/product.png";
+
 import { Button } from "../button";
+
 import "./index.css";
 
 export const Card = ({ item, variant }) => {
