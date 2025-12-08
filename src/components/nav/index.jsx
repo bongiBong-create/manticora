@@ -5,7 +5,7 @@ import { Button } from "../button";
 
 import "./index.css";
 
-export const Nav = ({ menu }) => {
+export const Nav = ({ menu, onCartClick }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -24,7 +24,9 @@ export const Nav = ({ menu }) => {
         {isOpen ? "ЗАКРЫТЬ" : "МЕНЮ"}
       </Button>
 
-      <Button className={isOpen ? "close" : ""}>КОРЗИНА (0)</Button>
+      <Button className={isOpen ? "close" : ""} onClick={onCartClick}>
+        КОРЗИНА (0)
+      </Button>
     </nav>
   );
 };

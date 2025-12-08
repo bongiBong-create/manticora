@@ -1,0 +1,59 @@
+import { Button } from "../button";
+import { Input } from "../input";
+import "./index.css";
+
+export const Cart = ({ isCartOpen, onClose }) => {
+  return (
+    <section className={`cart ${isCartOpen ? "open" : ""}`}>
+      <div className="cart_container">
+        <div className="cart_btns">
+          <span>КОРЗИНА (0)</span>
+          <Button onClick={onClose}>ЗАКРЫТЬ</Button>
+        </div>
+
+        <form className="cart_form" action="#">
+          <div className="form_group">
+            <label>ИМЯ</label>
+            <Input type="text" className="form_input" />
+          </div>
+          <div className="form_group">
+            <label>ФАМИЛИЯ</label>
+            <Input type="text" className="form_input" />
+          </div>
+          <div className="form_group">
+            <label>EMAIL</label>
+            <Input type="text" className="form_input" />
+          </div>
+          <div className="form_group">
+            <label>НОМЕР ТЕЛЕФОНА</label>
+            <Input
+              type="tel"
+              className="form_input"
+              placeholder="+7 (___) ___-__-__"
+            />
+          </div>
+          <div className="form_group">
+            <label>АДРЕС</label>
+            <Input
+              type="text"
+              className="form_input"
+              placeholder="Город, улица, дом, квартира"
+            />
+          </div>
+          <div className="form_group">
+            <label>СПОСОБ ДОСТАВКИ</label>
+            <input type="checkbox" />
+            <span>СДЭК</span>
+          </div>
+          <div className="form_group">
+            <label>СПОСОБ ОПЛАТЫ</label>
+            <input type="checkbox" />
+            <span>БАНКОВСКОЙ КАРТОЙ ОНЛАЙН</span>
+          </div>
+
+          <Button className="button_cart">ОФОРМИТЬ ЗАКАЗ</Button>
+        </form>
+      </div>
+    </section>
+  );
+};

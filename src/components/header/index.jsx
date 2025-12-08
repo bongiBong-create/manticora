@@ -1,7 +1,7 @@
 import { Nav } from "../nav";
 import "./index.css";
 
-export const Header = () => {
+export const Header = ({ onCartClick }) => {
   const menuItems = [
     { id: 1, name: "КАТАЛОГ", path: "/" },
     { id: 2, name: "О БРЕНДЕ", path: "/about" },
@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="logo">MANTICORE</div>
-      <Nav menu={menuItems} />
+      <Nav menu={menuItems} onCartClick={onCartClick} />
     </header>
   );
 };
