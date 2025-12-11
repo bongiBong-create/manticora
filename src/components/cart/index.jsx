@@ -1,6 +1,14 @@
 import { Button } from "../button";
+import { Card } from "../card";
 import { Input } from "../input";
+import { List } from "../list";
+
 import "./index.css";
+
+const products = [
+  { id: 1, name: "Сумка в корзине1", price: "3 500 Р" },
+  { id: 2, name: "Сумка в корзине2", price: "4 000 Р" },
+];
 
 export const Cart = ({ isCartOpen, onClose }) => {
   return (
@@ -10,6 +18,12 @@ export const Cart = ({ isCartOpen, onClose }) => {
           <span>КОРЗИНА (0)</span>
           <Button onClick={onClose}>ЗАКРЫТЬ</Button>
         </div>
+
+        <List
+          items={products}
+          className="cart_list"
+          renderItem={(item) => <Card item={item} variant="cart_card" />}
+        />
 
         <form className="cart_form" action="#">
           <div className="form_group">

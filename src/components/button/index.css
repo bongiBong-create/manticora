@@ -34,6 +34,10 @@
   padding: 7px 0;
 }
 
+.counter_btn {
+  padding: 2px 5px 5px 5px;
+}
+
 @media (max-width: 1024px) {
   .menu_button {
     display: inline-flex;
